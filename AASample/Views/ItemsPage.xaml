@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AASample.Views.ItemsPage" Title="{Binding Title}" x:Name="BrowseItemsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="gridPotrait" TargetType="Grid">
+                <Setter Property="Margin" Value="30,30,30,30"></Setter>
+                <Setter Property="BackgroundColor" Value="LightGray"></Setter>
+            </Style>
+            <Style x:Key="gridLandscape" TargetType="Grid">
+                <Setter Property="Margin" Value="40,40,40,40"></Setter>
+                <Setter Property="BackgroundColor" Value="LightGreen"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid x:Name="outerGrid" 
+                      Style="{DynamicResource gridStyle}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="innerGrid" Grid.Row="0" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0">
+                    <Image Source="xamarin_logo.png" HeightRequest="300" WidthRequest="300" />
+                </Frame>
+                <Grid x:Name="controlsGrid"
+                      Grid.Row="0" Grid.Column="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Name:" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="Date:" Grid.Row="1" Grid.Column="0" />
+                    <Label Text="Tags:" Grid.Row="2" Grid.Column="0" />
+                    <Entry Grid.Row="0" Grid.Column="1" />
+                    <Entry Grid.Row="1" Grid.Column="1" />
+                    <Entry Grid.Row="2" Grid.Column="1" />
+                </Grid>
+            </Grid>
+            <Grid x:Name="buttonsGrid" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Previous" Grid.Column="0" />
+                <Button Text="Save" Grid.Column="1" />
+                <Button Text="Next" Grid.Column="2" />
+            </Grid>
+            <Image Source="xamarin_logo.png"
+                   Grid.Row="2"
+                   HeightRequest="300" WidthRequest="300" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
