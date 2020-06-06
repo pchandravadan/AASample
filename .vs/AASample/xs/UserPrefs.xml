@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{9A38D8F9-4CEE-434A-A364-58391B585B6E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AASample/Views/ItemsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AASample/Views/ItemsPage.xaml.cs">
     <Files>
-      <File FileName="AASample/Views/AboutPage.xaml" Line="13" Column="44" />
+      <File FileName="AASample/Views/AboutPage.xaml" Line="7" Column="75" />
       <File FileName="AASample/Views/ItemsPage.xaml" Line="52" Column="24" />
+      <File FileName="AASample/Views/ItemsPage.xaml.cs" Line="67" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +11,9 @@
           <Node name="AASample" expanded="True">
             <Node name="AASample" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="ItemsPage.xaml" selected="True" />
+                <Node name="ItemsPage.xaml" expanded="True">
+                  <Node name="ItemsPage.xaml.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -19,8 +22,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AASample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.a55f487d226095759c3b9bfe5804b15f9c78ceeb" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.AASample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.982138ED-335C-446C-9DFD-4D03D262C554" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.AASample.Android PreferredExecutionTarget="Android.nexus_6p_pie_plus" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
