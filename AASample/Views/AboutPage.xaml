@@ -1,6 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="AASample.Views.AboutPage" xmlns:vm="clr-namespace:AASample.ViewModels" Title="{Binding Title}">
-    
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AASample.Views.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="{Binding Title}"
+    mc:Ignorable="d">
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
@@ -13,20 +20,38 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout
+            BackgroundColor="{StaticResource Accent}"
+            HorizontalOptions="Fill"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                HorizontalOptions="Center"
+                Orientation="Horizontal"
+                VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                    <Image
+                        HeightRequest="64"
+                        Source="xamarin_logo.png"
+                        VerticalOptions="Center" />
                 </ContentView>
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
-                <Label TextType="Html" FontSize="24" TextColor="DeepSkyBlue">
-                    TextType="Html" >> This app is written in C# and native APIs using the
+            <StackLayout
+                Padding="16,40,16,40"
+                Orientation="Vertical"
+                Spacing="10">
+                <Label
+                    FontSize="24"
+                    TextColor="DeepSkyBlue"
+                    TextType="Html">
+                    TextType=Html - Same Text Styles
                 </Label>
-                <Label TextType="Text" FontSize="24" TextColor="DeepSkyBlue">
-                    TextType="Text" >> It shares code with its
+                <Label
+                    FontSize="24"
+                    TextColor="DeepSkyBlue"
+                    TextType="Text">
+                    TextType=Text - Same Text Styles
                 </Label>
             </StackLayout>
         </ScrollView>
